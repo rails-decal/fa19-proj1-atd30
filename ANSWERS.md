@@ -1,4 +1,6 @@
 # Q0: Why are these two errors being thrown?
+The migrations error is thrown because there are migrations that haven't been run yet, so the schema might not be up to date.
+The second error is thrown because the Pokemon class hasn't been written yet.
 
 # Q1: How are the random Pokemon appearing? What is the common factor between all the possible Pokemon that appear? *
 
