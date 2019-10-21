@@ -3,6 +3,7 @@ The migrations error is thrown because there are migrations that haven't been ru
 The second error is thrown because the Pokemon class hasn't been written yet.
 
 # Q1: How are the random Pokemon appearing? What is the common factor between all the possible Pokemon that appear? *
+The Pokemon that appears is one chosen randomly from a list of pokemon in the database, with the common factor being that they don't have a trainer.
 
 # Question 2a: What does the following line do "<%= button_to "Throw a Pokeball!", capture_path(id: @pokemon), :class => "button medium", :method => :patch %>"? Be specific about what "capture_path(id: @pokemon)" is doing. If you're having trouble, look at the Help section in the README.
 
