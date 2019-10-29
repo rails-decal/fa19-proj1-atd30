@@ -4,5 +4,8 @@
 <p>Pokemon:</p>
 <% Pokemon.where(trainer_id: @trainer.id).each do |p| %>
     <%= image_tag("pokemon/#{p.ndex}.png", alt: "pokemon") %>
-    <p><%= p.name %> (Lvl <%= p.level %>)</p>
+    <p>
+    <%= p.name %> (Lvl <%= p.level %>)<br>
+    Health: <%= p.health %>
+    </p>
 <% end %>
