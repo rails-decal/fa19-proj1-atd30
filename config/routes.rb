@@ -4,4 +4,6 @@ Rails.application.routes.draw do
   resources :trainers
   patch 'capture', to: 'pokemons#capture'
   patch 'damage', to: 'pokemons#damage'
+  get 'pokemons/new', to: 'pokemons#new', as: 'new_pokemon'
+  post 'pokemons/create'
 end
