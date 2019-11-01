@@ -5,4 +5,16 @@ class PokemonsController < ApplicationController
         pokemon.save
         redirect_to root_path
     end
+
+    def damage
+        pokemon = Pokemon.find(params["id"])
+        trainer = pokemon.trainer
+        pokemon.health -= 10
+        if pokemon.health <= 0
+            pokemon.delete
+        else
+            pokemon.save
+        end
+        redirect_to trainer_path(trainer)
+    end
 end
